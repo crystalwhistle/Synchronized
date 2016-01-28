@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Supermercado+One" />-->
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />
 	<link href="/css/introHCI.css" rel="stylesheet">
-	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,10 +21,22 @@
 
 <body>
 
+	<!-- Dropdown menu-->
+	<div class="dropdown">
+		<img src="images/menu.jpg" width="85" height="85" class="img">
+	  	<div class="dropdown-content">
+	    	<a href="#">Create New</a>
+	    	<a href="#">Search</a>
+	    	<a href="#">Help</a>
+	  	</div>
+	</div>
+	<br><br>
+
+
 	<div class="container">
 		<center>
 
-		<div class="header">
+		<div>
 			<img src="images/logo.png" alt="logo" class="img"><br>
 			<img src="images/divider.png" alt="logo" class="img"><br>
 			<img src="images/events.png" alt="logo" class="img"><br>
@@ -39,8 +50,23 @@
 						<img src="images/{{image}}" class="img">
 						<p>{{name}}</p>
 						<p>{{date}}</p>
+					</a>
 				</div>
 			</a>
+
+			<!--Settings-->
+			<br>
+			<div class="dropdown">
+				<img src="images/settings.png" width="50" height="50" class="img">
+			  	<div class="dropdown-content">
+			    	<a href="#">Play</a>
+			    	<a href="#">Share</a>
+			    	<a href="#">Delete</a>
+			    	<a href="#">Settings</a>
+			  	</div>
+			</div>
+			<br><br>
+
 		{{/each}}
 		</center>
 	</div>

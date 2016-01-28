@@ -60,30 +60,40 @@ pre {
 .project{
      height: 170px;
      width: 620px;
+     /*-webkit-box-shadow:0 0 20px white; 
+     -moz-box-shadow: 0 0 20px white;
+     box-shadow: 0 0 20px white;*/
      border-color: #BCBEBF;
+     border-size:10px;
+     border-style:solid;
      background-color: #373838;
      background-size: 20%;
      background-opacity: 0.2;
-     border-size:10px;
      margin-bottom: 5px;
-     border-style:solid;
+
 }
 
 .project a {
+     margin-top: 2px;
      text-align: center;
      color: white;
      text-decoration: none;
      font-style: oblique;
      font-size: 24px;
 }
+
 .project img{
      position:absolute;
      margin: 5px;
      width:150px;
      height:150px;
      border-size:2px;
-     border-color:white;
+     border-color:#BCBEBF;
      border-style:solid;
+}
+
+.project:hover {
+     background-color: black
 }
 
 .createPlaylistOptions{
@@ -107,8 +117,48 @@ pre {
      /*width: 114px;
      height: 114px;*/
      border-size: 1px;
-     border-color: white;
+     border-color: #BCBEBF;
      border-style:solid;
      float: left;
      margin-left: 2%;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+     position: relative;
+     display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #373838;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+     color: white;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     font-size: 30px;
+     border-size: 0.5px;
+     border-color: #BCBEBF;
+     border-style:solid;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: black}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
