@@ -21,6 +21,7 @@
 <body>
 
 	<div class="container">
+		<center>
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		
@@ -28,57 +29,56 @@
 			<img src="images/logo.png" alt="logo" class="img"><br>
 			<img src="images/divider.png" alt="logo" class="img"><br>
 			<img src="images/events.png" alt="logo" class="img"><br>
-			<img src="images/divider.png" alt="logo" class="img">
+			<img src="images/divider.png" alt="logo" class="img"><br><br>
 		</div>
 
-	
-
-
-		
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
 		{{#each projects}}
-		<a href="project/{{name}}" class="thumbnail">
-		<div class="project" id="{{id}}">
 			<a href="project/{{name}}" class="thumbnail">
-				<img src="images/{{image}}" class="img">
-				<p>{{name}}</p>
-				<p>{{date}}</p>
-			
-		</div>
-		</a>
+				<div class="project" id="{{id}}">
+					<a href="project/{{name}}" class="thumbnail">
+						<img src="images/{{image}}" class="img">
+						<p>{{name}}</p>
+						<p>{{date}}</p>
+				</div>
+			</a>
 		{{/each}}
-		
+		</center>
 	</div>
 
 	<div class="createPlaylistOptions">
+		<center>
   			<h2>Create a new playlist for</h2>
+
   			<div class ="options">
-			<div class="createPlaylist" id="Gym">
-				<a href="createPlaylist.html" class="thumbnail">
-					<img src="images/Gym.jpg" alt="Working Out" class="img">
-				</a>
+				<div class="createPlaylist" id="Gym">
+					<a href="createPlaylist.html" class="thumbnail">
+						<img src="images/Gym.jpg" alt="Working Out" class="img">
+					</a>
+				</div>
+				<div class="createPlaylist" id="Formal">
+					<a href="createPlaylist.html" class="thumbnail">
+						<img src="images/Formal.jpg" alt="Formal Event" class="img">
+					</a>
+				</div>
+				<div class="createPlaylist" id="Party">
+					<a href="createPlaylist.html" class="thumbnail">
+						<img src="images/Party.jpg" alt="Partying" class="img">
+					</a>
+				</div>
+				<div class="createPlaylist" id="Fun">
+					<a href="createPlaylist.html" class="thumbnail">
+						<img src="images/Fun.jpg" alt="Having Fun" class="img">
+					</a>
+				</div>
 			</div>
-			<div class="createPlaylist" id="Formal">
-				<a href="createPlaylist.html" class="thumbnail">
-					<img src="images/Formal.jpg" alt="Formal Event" class="img">
-				</a>
-			</div>
-			<div class="createPlaylist" id="Party">
-				<a href="createPlaylist.html" class="thumbnail">
-					<img src="images/Party.jpg" alt="Partying" class="img">
-				</a>
-			</div>
-			<div class="createPlaylist" id="Fun">
-				<a href="createPlaylist.html" class="thumbnail">
-					<img src="images/Fun.jpg" alt="Having Fun" class="img">
-				</a>
-			</div>
-		</div>
-  		</div>
+		</center>
+  	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 </body>
+
 </html>

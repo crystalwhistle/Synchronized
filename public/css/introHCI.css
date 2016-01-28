@@ -1,33 +1,25 @@
-/* applies to anything of class "example-class-selector" */
-.example-class-selector {
-	margin-top: 2em;
+body {
+     background-image: url("../images/bg.jpg");
+     padding: 30px;
+     text-align:center;
+     background-size: 85%;
 }
 
-/* applies to any <p> descendants of an element of class "example-class-selector" */
-.example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
-	color: #CC00AA;
+* {
+     font-family: verdana;
+     color:white;
 }
 
-.jumbotron {
-	position: relative;
-	background: none;
-}
-
-.jumbotron:after {
-     content:"";
-     background: url("../images/lorempixel.jumbotron.jpeg");
-     opacity: 0.2;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-     position: absolute;
-     z-index: -1;	
-}
-
-.jumbotron p {
-     color: #6e6e6e;
+.project{
+     height: 170px;
+     width: 620px;
+     border-color: #BCBEBF;
+     background-color: #373838;
+     background-size: 20%;
+     background-opacity: 0.2;
+     border-size:10px;
+     margin-bottom: 5px;
+     border-style:solid;
 }
 
 .project a {
@@ -47,24 +39,8 @@
      border-style:solid;
 }
 
-body {
-     background-image: url("../images/bg.jpg");
-     padding: 30px;
-     text-align:center;
-     background-size: 85%;
-}
-
-.project{
-     height: 170px;
-     border-color: white;
-     background-image: url("../images/bg.jpg");
-     background-size: 20%;
-     border-size:10px;
-     margin-bottom: 5px;
-     border-style:solid;
-}
-
 .createPlaylistOptions{
+     position: relative;
      text-align: center;
 }
 
@@ -81,4 +57,7 @@ body {
 .createPlaylist img{
      width: 114px;
      height: 114px;
+     border-size: 1px;
+     border-color: white;
+     border-style:solid;
 }
