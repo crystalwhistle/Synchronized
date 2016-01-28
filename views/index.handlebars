@@ -6,7 +6,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">-->
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Supermercado+One" />-->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />
 	<link href="/css/introHCI.css" rel="stylesheet">
 	<!-- this is a comment in HTML -->
 
@@ -22,9 +24,7 @@
 
 	<div class="container">
 		<center>
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
-		
+
 		<div class="header">
 			<img src="images/logo.png" alt="logo" class="img"><br>
 			<img src="images/divider.png" alt="logo" class="img"><br>
@@ -32,9 +32,6 @@
 			<img src="images/divider.png" alt="logo" class="img"><br><br>
 		</div>
 
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
 		{{#each projects}}
 			<a href="project/{{name}}" class="thumbnail">
 				<div class="project" id="{{id}}">
