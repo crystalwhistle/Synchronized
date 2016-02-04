@@ -50,7 +50,13 @@ pre {
      font-weight: 400;
      line-height: 18.5714px;
 }
+.form-control{
+     color:black;
+}
 
+input[type=submit]{
+     background:#ccc;
+}
 
 * {
      font-family: 'Amatic SC';
@@ -92,6 +98,7 @@ pre {
      border-style:solid;
 }
 
+
 .project:hover {
      background-color: black
 }
@@ -126,15 +133,21 @@ pre {
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
      position: relative;
-     display: inline-block;
+     display: inline-block; 
+}
+
+.dropdown img{
+     width: 100px;
+     height: 100px;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
      display: none;
-     position: absolute;
+     position: relative;
      background-color: #373838;
-     min-width: 160px;
+     /*min-width: 160px;*/
+     min-width: relative;
      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
