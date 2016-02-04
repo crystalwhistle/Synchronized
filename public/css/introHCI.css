@@ -54,9 +54,15 @@ pre {
      color:black;
 }
 
+label{
+     width: 200px;
+}
+
 input[type=submit]{
      background:#ccc;
 }
+
+
 
 * {
      font-family: 'Amatic SC';
