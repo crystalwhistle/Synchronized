@@ -144,10 +144,10 @@ input[type=submit]{
      display: inline-block; 
 }
 
-.dropdown img{
+/*.dropdown img{
      width: 100px;
      height: 100px;
-}
+}*/
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
