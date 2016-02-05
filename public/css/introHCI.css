@@ -75,6 +75,9 @@ label{
 input[type=submit]{
      background:#000;
 }
+input[type=button]{
+     background:#000;
+}
 
 
 
