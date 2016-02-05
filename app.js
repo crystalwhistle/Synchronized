@@ -15,6 +15,9 @@ var index = require('./routes/index');
 var app = express();
 var project = require('./routes/project');
 var createNewEvent = require('./routes/createNewEvent');
+var editEvents = require('./routes/editEvents');
+var help = require('./routes/help');
+var search = require('./routes/search');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -40,6 +43,9 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/createNewEvent', createNewEvent.view);
 app.get('/project/:name', project.viewProject);
+app.get('/editEvents', editEvents.view);
+app.get('/help', help.view);
+app.get('/search', search.view);
 // Example route
 // app.get('/users', user.list);
 
