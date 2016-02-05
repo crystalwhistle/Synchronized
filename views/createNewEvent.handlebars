@@ -32,6 +32,16 @@
 
 <body>
 
+  <div class="dropdown">
+    <img src="images/menu.jpg" width="43" height="43" class="img">
+      <div class="dropdown-content">
+        <a href="/createNewEvent">Create New</a>
+        <a href="/editEvents">Edit Events</a>
+        <a href="/search">Search</a>
+        <a href="/help">Help</a>
+      </div>
+  </div>
+  <br><br>
   <div class="container">
     <center>
 
@@ -60,7 +70,7 @@
       </div> 
       <br>
        <input type ="radio" name="eventType" value="public">Public<input type ="radio" name="eventType" value="private">Private<br><br><br>
-      <input type="submit" id="cancelBtn" class="btn btn-default" value="Cancel"></input><input type="submit" id="submitBtn" class="btn btn-default" value="Create Event"></input>
+      <a href="/"><input type="button"id="cancelBtn" class="btn btn-default" value="Cancel"></input></a><input type="submit" id="submitBtn" class="btn btn-default" value="Create Event"></input>
     </div>
   </form>
 
