@@ -25,7 +25,7 @@ h1 {
 }
 h2 {
      font-family: 'Amatic SC';
-     font-size: 45px;
+     font-size: 50px;
      font-style: normal;
      font-variant: normal;
      font-weight: 500;
@@ -34,15 +34,7 @@ h2 {
 
 h3 {
      font-family: 'Amatic SC';
-     font-size: 25px;
-     font-style: normal;
-     font-variant: normal;
-     font-weight: 500;
-     line-height: 15.4px;   
-}
-h3 {
-     font-family: 'Amatic SC';
-     font-size: 50px;
+     font-size: 35px;
      font-style: normal;
      font-variant: normal;
      font-weight: 500;
@@ -126,10 +118,10 @@ input[type=submit]{
      border-style:solid;
 }
 
-<<<<<<< HEAD
-=======
+
+/*
 .songsList img{
-     /*position:absolute;*/
+     //position:absolute;
      float:left;
      margin: 5px;
      width:100px;
@@ -142,12 +134,11 @@ input[type=submit]{
 .optionsadd img{
      width: 5%;
      height:5%;
-     /*width: 114px;
-     height: 114px;*/
+     //width: 114px;
+     //height: 114px;
      float: right;
      margin-left: 2%;
-}
->>>>>>> e7fb63cc8714c17cf6807d6ed0319e50285fc2ea
+}*/
 
 .project:hover {
      background-color: black
@@ -228,4 +219,12 @@ input[type=submit]{
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+
+
+.btn {
+     font-family: 'Amatic SC';
+     font-size: 35px;
+     font-style: normal;
 }

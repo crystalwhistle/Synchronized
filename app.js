@@ -18,6 +18,10 @@ var createNewEvent = require('./routes/createNewEvent');
 var editEvents = require('./routes/editEvents');
 var help = require('./routes/help');
 var search = require('./routes/search');
+var settings = require('./routes/settings');
+var share = require('./routes/share');
+var playNow = require('./routes/playNow');
+var addSong = require('./routes/addSong');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -46,6 +50,10 @@ app.get('/project/:name', project.viewProject);
 app.get('/editEvents', editEvents.view);
 app.get('/help', help.view);
 app.get('/search', search.view);
+app.get('/settings', settings.view);
+app.get('/share', share.view);
+app.get('/playNow', playNow.view);
+app.get('/addSong', addSong.view);
 // Example route
 // app.get('/users', user.list);
 
