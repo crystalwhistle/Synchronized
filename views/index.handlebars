@@ -4,12 +4,13 @@
 <head>
 	<title>Synchronized</title>	
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
 	<!--<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Supermercado+One" />-->
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />
 	<link href="/css/introHCI.css" rel="stylesheet">
+	<!--<meta name="viewport" content="user-scalable = yes">-->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,7 +26,8 @@
 	<div class="dropdown">
 		<img src="images/menu.jpg" width="85" height="85" class="img">
 	  	<div class="dropdown-content">
-	    	<a href="#">Create New</a>
+	    	<a href="/createNewEvent">Create New</a>
+	    	<a href="#">Edit Events</a>
 	    	<a href="#">Search</a>
 	    	<a href="#">Help</a>
 	  	</div>
@@ -52,11 +54,12 @@
 						<p>{{date}}</p>
 					</a>
 				</div>
+
 			</a>
 
 			<!--Settings-->
 			<br>
-			<div class="dropdown">
+			<!--<div class="dropdown">
 				<img src="images/settings.png" width="50" height="50" class="img">
 			  	<div class="dropdown-content">
 			    	<a href="#">Play</a>
@@ -64,14 +67,14 @@
 			    	<a href="#">Delete</a>
 			    	<a href="#">Settings</a>
 			  	</div>
-			</div>
+			</div>-->
 			<br><br>
 
 		{{/each}}
 		</center>
 	</div>
 
-	<div class="createPlaylistOptions">
+	<!--<div class="createPlaylistOptions">
 		<center>
   			<h2>Create a new playlist for</h2>
 
@@ -98,7 +101,7 @@
 				</div>
 			</div>
 		</center>
-  	</div>
+  	</div>-->
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
