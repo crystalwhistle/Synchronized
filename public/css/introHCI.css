@@ -146,6 +146,7 @@ input[type=submit]{
 
 .createPlaylistOptions{
      position: relative;
+     line-height: 50px;
 }
 
 .options a{
@@ -168,7 +169,6 @@ input[type=submit]{
      border-color: #BCBEBF;
      border-style:solid;
      float: left;
-     line-height: 50px;
      margin-left: 2%;
 }
 
