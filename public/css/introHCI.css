@@ -16,48 +16,48 @@ img{
 
 
 h1 {
-     font-family: 'Amatic SC';
-     font-size: 60px;
-     font-style: normal;
-     font-variant: normal;
-     font-weight: 500;
-     line-height: 26.4px;
-}
-h2 {
-     font-family: 'Amatic SC';
+     font-family: 'Julius Sans One', sans-serif;
      font-size: 50px;
      font-style: normal;
      font-variant: normal;
      font-weight: 500;
-     line-height: 60.4px;   
+     line-height: 40px;
 }
-
-h3 {
-     font-family: 'Amatic SC';
-     font-size: 35px;
+h2 {
+     font-family: 'Julius Sans One', sans-serif;
+     font-size: 40px;
      font-style: normal;
      font-variant: normal;
      font-weight: 500;
-     line-height: 15.4px;  
+     line-height: 35px;   
+}
+
+h3 {
+     font-family: 'Julius Sans One', sans-serif;
+     font-size: 25px;
+     font-style: normal;
+     font-variant: normal;
+     font-weight: 500;
+     line-height: 20px;  
 }
 p {
-     font-family: 'Amatic SC';
-     font-size: 40px;
+     font-family: 'Julius Sans One', sans-serif;
+     font-size: 30px;
      font-style: normal;
      font-variant: normal;
      font-weight: 400;
-     line-height: 20px;
+     line-height: 25px;
 }
 blockquote {
-     font-family: 'Amatic SC';
-     font-size: 40px;
+     font-family: 'Julius Sans One', sans-serif;
+     font-size: 30px;
      font-style: normal;
      font-variant: normal;
      font-weight: 400;
-     line-height: 30px;
+     line-height: 25px;
 }
 pre {
-     font-family: 'Amatic SC';
+     font-family: 'Julius Sans One', sans-serif;
      font-size: 20px;
      font-style: normal;
      font-variant: normal;
@@ -82,7 +82,7 @@ input[type=button]{
 
 
 * {
-     font-family: 'Amatic SC';
+     font-family: 'Julius Sans One', sans-serif;
      color:white;
 }
 
@@ -103,12 +103,24 @@ input[type=button]{
 }
 
 .project a {
-     margin-top: 2px;
-     text-align: center;
+     margin-top: 10px;
+     /*text-align: center;*/
      color: white;
      text-decoration: none;
-     font-style: oblique;
-     font-size: 24px;
+     /*font-style: oblique;*/
+     font-size: 35px;
+     overflow: hidden;
+}
+
+.project p {
+     margin-top: 35px;
+     text-align: left;
+     margin-left: 190px;
+     color: white;
+     /*text-decoration: none;
+     font-style: oblique;*/
+     font-size: 30px;
+     overflow: hidden;
 }
 
 .project img{
@@ -119,6 +131,7 @@ input[type=button]{
      border-size:2px;
      border-color:#BCBEBF;
      border-style:solid;
+     float: left;
 }
 
 
@@ -230,7 +243,13 @@ input[type=button]{
 
 
 .btn {
-     font-family: 'Amatic SC';
+     font-family: 'Julius Sans One', sans-serif;
      font-size: 35px;
      font-style: normal;
+     background-color: #373838;
+     padding: 12px 16px;
+}
+
+.btn:hover {
+     background-color: black
 }

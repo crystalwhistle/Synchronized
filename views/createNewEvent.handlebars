@@ -8,13 +8,13 @@
   <!--<link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Supermercado+One" />-->
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />
-  <link href="/css/introHCI.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
   <!--<meta name="viewport" content="user-scalable = yes">-->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
+  <link href="/css/introHCI.css" rel="stylesheet">
   <script>
   $(function() {
     $( "#datepicker" ).datepicker();
@@ -32,6 +32,7 @@
 
 <body>
 
+<!--Don't need menu
   <div class="dropdown">
     <img src="images/menu.jpg" width="43" height="43" class="img">
       <div class="dropdown-content">
@@ -41,7 +42,8 @@
         <a href="/help">Help</a>
       </div>
   </div>
-  <br><br>
+  <br><br>-->
+
   <div class="container">
     <center>
 
@@ -61,6 +63,9 @@
         <h2><label for="date">Date:</label></h2>
         <input type="date" class="form-control" id="datepicker" style="width:300px" name="date" required>
       </div>
+
+      <!-- Stretch goal features-->
+      <!--
       <div class="form-group">
         <br>
         Allow Song Submissions<input type="checkbox" class="form-control" id="userSongs" name="userSongs"><br>
@@ -69,7 +74,8 @@
         Repeat<input type="checkbox" class="form-control" id="userSongs" name="userSongs">
       </div> 
       <br>
-       <input type ="radio" name="eventType" value="public">Public<input type ="radio" name="eventType" value="private">Private<br><br><br>
+       <input type ="radio" name="eventType" value="public">Public<input type ="radio" name="eventType" value="private">Private<br><br><br>-->
+       <br><br>
       <a href="/"><input type="button"id="cancelBtn" class="btn btn-default" value="Cancel"></input></a><input type="submit" id="submitBtn" class="btn btn-default" value="Create Event"></input>
     </div>
   </form>
