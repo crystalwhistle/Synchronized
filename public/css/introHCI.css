@@ -253,3 +253,10 @@ input[type=button]{
 .btn:hover {
      background-color: black
 }
+
+/*
+.divider{
+    width:30px;
+    height:auto;
+    display:inline-block;
+}*/

@@ -16,9 +16,11 @@
   <link rel="stylesheet" href="/resources/demos/style.css">
   <link href="/css/introHCI.css" rel="stylesheet">
   <script>
+  
   $(function() {
-    $( "#datepicker" ).datepicker();
+    $("#datepicker").datepicker();
   });
+
   </script>
   </script>
 
@@ -60,8 +62,12 @@
         <input type="text" class="form-control" id="eventName" style="width:300px" placeholder="Name" name="name" required>
       </div>
       <div class="form-group">
-        <h2><label for="date">Date:</label></h2>
+        <h2><label for="date">Event Date:</label></h2>
         <input type="date" class="form-control" id="datepicker" style="width:300px" name="date" required>
+      </div>
+      <div>
+        <h2><label for="name">Event Picture:</label></h2>
+        <input type="file" name="pic" accept="image/*">
       </div>
 
       <!-- Stretch goal features-->
@@ -76,7 +82,9 @@
       <br>
        <input type ="radio" name="eventType" value="public">Public<input type ="radio" name="eventType" value="private">Private<br><br><br>-->
        <br><br>
-      <a href="/"><input type="button"id="cancelBtn" class="btn btn-default" value="Cancel"></input></a><input type="submit" id="submitBtn" class="btn btn-default" value="Create Event"></input>
+       <input type="submit" id="submitBtn" class="btn btn-default" value="Create Event"></input>
+       <br><br><br>
+      <a href="/"><input type="button"id="cancelBtn" class="btn btn-default" value="Cancel"></input></a>
     </div>
   </form>
 
