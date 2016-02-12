@@ -36,8 +36,8 @@
   <div class="dropdown">
     <img src="images/menu.jpg" width="43" height="43" class="img">
       <div class="dropdown-content">
-        <a href="/index">Events</a>
-        <a href="/help">Help</a>
+        <a href="/index">Home</a>
+        <a href="javascript:history.back()">Back</a>
       </div>
   </div>
   <br><br>
@@ -55,14 +55,17 @@
 
     <form id="addSongForm" role="form" method="get" action="/addSong">
           <div class="form-group">
-            <label for="songTitle">Song Title:</label>
+            <label for="songTitle"><h3>Song Title:</h3></label>
             <input type="text" class="form-control" id="songTitle" placeholder="Title" name="songTitle" required>
           </div>
+          <br>
           <div class="form-group">
-            <label for="artist">Artist:</label>
+            <label for="artist"><h3>Artist:</h3></label>
             <input type="text" class="form-control" id="artist" placeholder="Artist" name="artist" required>
           </div>
-          <input type="submit" id="submitBtn" class="btn btn-default" value="Add Song"></input>
+          <br><br>
+          <input type="submit" id="submitBtn" class="btn btn-default" value="Add Song"></input><br><br></a>
+          <a href="javascript:history.back()"><input type="button"id="cancelBtn" class="btn btn-default" value="Cancel"></input></a>
       </form>
     
 
