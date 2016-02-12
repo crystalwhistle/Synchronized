@@ -11,6 +11,8 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
+// Adding route for create new event page
+var createNewEvent = require('./routes/createNewEvent');
 
 var app = express();
 var project = require('./routes/project');
@@ -46,7 +48,7 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/index', index.view);
-app.get('/createNewEvent', createNewEvent.view);
+//app.get('/createNewEvent', createNewEvent.view);
 app.get('/project/:name', project.viewProject);
 app.get('/editEvents', editEvents.view);
 app.get('/help', help.view);
@@ -57,6 +59,7 @@ app.get('/playNow', playNow.view);
 app.get('/addSong', addSong.view);
 // Example route
 // app.get('/users', user.list);
+app.get('/createNewEvent', createNewEvent.addEvent);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
