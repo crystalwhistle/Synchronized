@@ -66,8 +66,9 @@
         <input type="date" class="form-control" id="datepicker" style="width:300px" name="date" required>
       </div>
       <div>
-        <h2><label for="name">Event Picture:</label></h2>
-        <input type="file" name="pic" accept="image/*">
+        <h2><label for="image">Event Picture (link):</label></h2>
+        <!--<input type="file" name="pic" accept="image/*">-->
+        <input type="text" class="form-control" id="image" style="width:300px" placeholder="Insert link to .png or .jpg" name="image" required>
       </div>
 
       <!-- Stretch goal features-->
@@ -84,7 +85,7 @@
        <br><br>
        <input type="submit" id="submitBtn" class="btn btn-default" value="Create Event"></input>
        <br><br><br>
-      <a href="javascript:history.back()"><input type="button"id="cancelBtn" class="btn btn-default" value="Cancel"></input></a>
+      <a href="/index"><input type="button"id="cancelBtn" class="btn btn-default" value="Cancel/Done"></input></a>
     </div>
   </form>
 
