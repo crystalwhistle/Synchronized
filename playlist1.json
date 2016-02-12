@@ -1,24 +1,26 @@
 {
+	"empty": "",
 	"name" : "Crystal's 21st Birthday Party",
 	"currentlyPlaying": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/241018700",
 	"playlist1": [
-		{
-			"songName": "Real Friends",
-			"artist": "Kanye West",
-			"embedURL": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/241018700"			
-		},
+			{
+				"songName": "Real Friends",
+				"artist": "Kanye West",
+				"embedURL": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/241018700"
+			},
 
-		{
-			"songName": "Hotline Bling",
-			"artist": "Drake",
-			"embedURL": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/241018700"
+			{
+				"songName": "Hotline Bling",
+				"artist": "Drake",
+				"embedURL": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/241018700"
 
-		},
-		{
-			"songName": "Trap Queen",
-			"artist": "Fetty Wap",
-			"embedURL": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/241018700"
+			},
+			{
+				"songName": "Trap Queen",
+				"artist": "Fetty Wap",
+				"embedURL": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/241018700"
+			}
 
-		}
+		
 				]
 }
