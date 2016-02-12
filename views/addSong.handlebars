@@ -50,10 +50,20 @@
       <a href="/"><img src="images/logo.png" alt="logo" class="img"></a><br>
       <img src="images/divider.png" alt="logo" class="img"><br>
     </div>
-
+    <h3>{{notification}}</h3>
     <h2>Add A Song</h2><br>
 
-    <h3> PLACEHOLDER</h3>
+    <form id="addSongForm" role="form" method="get" action="/addSong">
+          <div class="form-group">
+            <label for="songTitle">Song Title:</label>
+            <input type="text" class="form-control" id="songTitle" placeholder="Title" name="songTitle" required>
+          </div>
+          <div class="form-group">
+            <label for="artist">Artist:</label>
+            <input type="text" class="form-control" id="artist" placeholder="Artist" name="artist" required>
+          </div>
+          <input type="submit" id="submitBtn" class="btn btn-default" value="Add Song"></input>
+      </form>
     
 
     
