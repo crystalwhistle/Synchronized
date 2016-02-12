@@ -32,7 +32,8 @@
       </div>
     
       <div class="jumbotron">
-        <h2>{{projectName}}</h2>
+        <!--<h2>{{projectName}}</h2>-->
+        <h2>{{name}}</h2>
 
         <div class ="optionsadd">
             <a href="../addSong" class="add">
@@ -53,7 +54,25 @@
         </div>
 
         <h2>Playlist:</h2>
+          <iframe width="300" height="300" scrolling="no" frameborder="no" src="{{currentlyPlaying}}&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe><br>
+
+        {{#each playlist1}}
+                <li><h3>{{songName}} - {{artist}}</h3></li>
+                {{/each}}
       </div>
+
+      <form id="addSongForm" role="form" method="get" action="">
+        <h3>Add a song</h3>
+          <div class="form-group">
+            <label for="songTitle">Song Title:</label>
+            <input type="text" class="form-control" id="songTitle" placeholder="Title" name="songTitle">
+          </div>
+          <div class="form-group">
+            <label for="artist">Artist:</label>
+            <input type="text" class="form-control" id="artist" placeholder="Artist" name="artist">
+          </div>
+          <input type="submit" id="submitBtn" class="btn btn-default" value="Add Song"></input>
+      </form>
 
 
     <!--  {{#each songs}}
