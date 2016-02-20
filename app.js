@@ -54,7 +54,7 @@ app.get('/editEvents', editEvents.view);
 app.get('/help', help.view);
 app.get('/updateJSON', updateJSON.view);
 app.get('/search', search.view);
-app.get('/settings', settings.view);
+app.get('/settings/:name', settings.view);
 app.get('/share', share.view);
 app.get('/playNow', playNow.view);
 app.get('/addSong', addSong.view);
