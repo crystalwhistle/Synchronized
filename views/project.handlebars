@@ -10,11 +10,20 @@
   <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
   <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
   <link href="/css/introHCI.css" rel="stylesheet">
+  <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+  <!--<script src="/js/updateJSON.js"></script>
+  <script src="project.js"></script>-->
+
+  
+
     
 </head>
 
   <body>
   <!--Menu-->
+
+  
+ 
   <div class="dropdown">
     <img src="../images/menu.jpg" width="43" height="43" class="img">
       <div class="dropdown-content">
@@ -29,8 +38,14 @@
         <a href="/"> <img src="../images/logo.png" alt="logo" class="img"></a><br>
         <img src="../images/divider.png" alt="logo" class="img"><br>
       </div>
+        <ul id="results">
+            
+    </ul>
     
       <div class="jumbotron">
+
+    
+       
         <!--<h2>{{projectName}}</h2>-->
         <h2>{{name}}</h2>
 
@@ -46,12 +61,70 @@
         </div>
 
         <h2>Playlist:</h2>
-          <iframe width="300" height="300" scrolling="no" frameborder="no" src="{{currentlyPlaying}}&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe><br>
+        <!--  <iframe width="300" height="300" scrolling="no" frameborder="no" src="{{currentlyPlaying}}&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe><br> -->
+         <div id="player"></div>
+    
+    <script>
+      //helloWorld();
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      
+      var player;
+      //var playlist1 = require('../playlist1.json');
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: '{{currentlyPlaying}}',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+        
+      }
+
+     
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == 0) {
+          //event.target.loadVideoById('IbyFn4Ak_wE');
+          window.location = "/updateJSON";
+
+          //helloWorld();
+          //stopVideo();
+          done = true
+        }
+      }
+      /*function stopVideo() {
+        //alert("in stop video");
+       // playlist1["currentlyPlaying"] = 'IbyFn4Ak_wE';      
+        player.cueVideoByUrl({ 'mediaContentURL': 'https://www.youtube.com/watch?v=IbyFn4Ak_wE'});
+        //player.playVideo();
+        //player.playVideo();
+       // window.location.reload(true); 
+      //  alert("passed reload"); 
+        
+      }*/
+
+
+    </script>
 
         {{#each playlist1}}
                 <li><h3>{{songName}} - {{artist}}</h3></li>
                 {{/each}}
       </div>
+  
 
       <!--<form id="addSongForm" role="form" method="get" action="/addSong">
         <h3>Add a song</h3>
@@ -121,5 +194,23 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    
+
+    
+
+  
+   
+
+
+
+    
+
+        
+
+      
+
+
+
+      
   </body>
 </html>

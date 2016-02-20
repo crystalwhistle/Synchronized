@@ -13,7 +13,7 @@ var index = require('./routes/index');
 // var user = require('./routes/user');
 // Adding route for create new event page
 var createNewEvent = require('./routes/createNewEvent');
-
+var updateJSON = require('./routes/updateJSON');
 var app = express();
 var project = require('./routes/project');
 var createNewEvent = require('./routes/createNewEvent');
@@ -52,6 +52,7 @@ app.get('/index', index.view);
 app.get('/project/:name', project.viewProject);
 app.get('/editEvents', editEvents.view);
 app.get('/help', help.view);
+app.get('/updateJSON', updateJSON.view);
 app.get('/search', search.view);
 app.get('/settings', settings.view);
 app.get('/share', share.view);

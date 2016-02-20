@@ -1,12 +1,16 @@
 var playlist1 = require('../playlist1.json');
 exports.viewProject = function(req,res){
 	//var name = req.params.name;
-	console.log(playlist1);
+	//console.log(playlist1);
   if(playlist1["playlist1"].length == 0){
      playlist1["empty"] = "No songs in this playlist!";
   }else{
       playlist1["empty"] = "";
   }
+
+ 
+
+
   /*var songName = req.query.songTitle;
   var artist = req.query.artist;
   var newSong = {
@@ -16,13 +20,5 @@ exports.viewProject = function(req,res){
   }
   playlist1["playlist1"].push(newSong);*/
   res.render('project', playlist1);
-};
+}
 
-/*
-exports.viewProject = function(req,res){
-	var name = req.params.name;
-	console.log("The project name is " + name)
-	res.render('project', {
-		'projectName': name
-	});	
-};*/
