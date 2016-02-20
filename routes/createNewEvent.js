@@ -2,7 +2,7 @@ var data = require("../newEventData.json");
 
 exports.addEvent = function(req, res){
     console.log(data);
-    res.render('createNewEvent', data);
+    //res.render('createNewEvent', data);
 
     if (req.query.name && req.query.date) {
     	var newEvent = {"name" : req.query.name,
@@ -12,8 +12,9 @@ exports.addEvent = function(req, res){
 						"setIMG": "settings.png"
 						}
 	data["projects"].push(newEvent);
+	res.render('index',data);
 	}
 	else {
-
+		res.render('createNewEvent', data);
 	}
 }
