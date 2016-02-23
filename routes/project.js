@@ -19,6 +19,7 @@ exports.viewProject = function(req,res){
     "embedURL": "http://lorempixel.com/400/400/people"
   }
   playlist1["playlist1"].push(newSong);*/
+  console.log(playlist1);
   res.render('project', playlist1);
 }
 

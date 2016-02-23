@@ -1,25 +1,20 @@
 {
 	"empty": "",
 	"name" : "Crystal's 21st Birthday",
-	"currentlyPlaying": "M7lc1UVf-VE",
-	"nextPlaying": "IbyFn4Ak_wE",
+	"currentlyPlaying": "428owtKUJYk",
+	"nextPlaying": "drV0QatqbRU",
 	"playlist1": [
-			{
-				"songName": "Real Friends",
-				"artist": "Kanye West",
-				"embedURL": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/241018700"
-			},
-
 			{
 				"songName": "Hotline Bling",
 				"artist": "Drake",
-				"embedURL": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/241018700"
-
+				"videoID": "uxpDa-c-4Mc"
 			},
+
 			{
-				"songName": "Trap Queen",
-				"artist": "Fetty Wap",
-				"embedURL": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/241018700"
+				"songName": "On My Mind",
+				"artist": "Ellie Goulding",
+				"videoID": "H202k7KfZL0"
+
 			}
 
 		
