@@ -24,6 +24,8 @@ var settings = require('./routes/settings');
 var share = require('./routes/share');
 var playNow = require('./routes/playNow');
 var addSong = require('./routes/addSong');
+var deleteEvent = require('./routes/deleteEvent');
+var updateEvent = require('./routes/updateEvent');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -61,6 +63,8 @@ app.get('/addSong', addSong.view);
 // Example route
 // app.get('/users', user.list);
 app.get('/createNewEvent', createNewEvent.addEvent);
+app.get('/deleteEvent/:name', deleteEvent.view);
+app.get('/updateEvent/:name', updateEvent.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

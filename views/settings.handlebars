@@ -55,31 +55,30 @@
     
     <div class="form">
 
-    <form id="updateEventForm" role="form" method="get" action="/update">
+    <form id="updateEventForm" role="form" method="get" action="/updateEvent/{{name}}">
       <div class="form-group">
         <h3><label for="name">Event name:</label></h3>
-        <input type="text" class="form-control" id="eventName" style="width:300px" placeholder="{{name}}" name="name" required>
+        <input type="text" class="form-control" id="eventName" style="width:300px" placeholder="{{name}}" name="name">
       </div>
       <div class="form-group">
         <h3><label for="date">Event Date:</label></h3>
-        <input type="date" class="form-control" id="datepicker" style="width:300px" name="date" required>
+        <input type="date" class="form-control" id="datepicker" style="width:300px" name="date">
       </div>
       <div>
         <h3><label for="image">Event Picture (link):</label></h3>
         <!--<input type="file" name="pic" accept="image/*">-->
-        <input type="text" class="form-control" id="image" style="width:300px" placeholder="{{image}}" name="image" required>
+        <input type="text" class="form-control" id="image" style="width:300px" placeholder="{{image}}" name="image">
       </div>
       <br><br>
 
-      <a href="../project/{{name}}"><input type="submit" id="updateBtn" class="btn btn-default" value="Update"></input><br><br>
+      <input type="submit" id="updateBtn" class="btn btn-default" value="Update"></input><br><br>
     </form>
 
     <a href="../project/{{name}}"><button id="cancelBtn" class="btn btn-default">Cancel/Done</button></a><br><br>
-    <a href="/index"><button id="deleteEvent" class="btn btn-default">Delete Event</button></a>
+    <a href="/deleteEvent/{{name}}"><button id="deleteEvent" class="btn btn-default">Delete Event</button></a>
     
     </div>
 
-    
     </center>
   </div>
 

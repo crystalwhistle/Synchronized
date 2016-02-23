@@ -11,20 +11,11 @@ exports.view = function(req, res){
     if (data.projects[i].name == name) {
       var entry = data.projects[i];
 
-      console.log(entry);
-
-      // Modifiy the entry as you wish here.
-      // The question only mentioned setting "finished" to true, so that's
-      // what I'm doing, but you can change it in any way you want to.
-      entry.finished = true;
+      data.projects.splice(i, 1);
 
       break;
     }
   }
 
-	res.render('settings', {
-		'name': name,
-		'date': data.projects[i].date,
-		'pic': data.projects[i].image
-	});
+	res.redirect('/index');
 }
