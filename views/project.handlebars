@@ -35,10 +35,10 @@
     
       <div class="jumbotron">
         <!--<h2>{{projectName}}</h2>-->
-        <h2>{{name}}</h2>
+        <h2 id="name">{{name}}</h2>
 
         <div class ="optionsadd">
-            <a href="../addSong" class="add"> <img src="../images/add.png" title="Add a song!" width="50" height="50" class="img"></a>
+            <a href="../addSong/{{name}}" class="add"> <img src="../images/add.png" title="Add a song!" width="50" height="50" class="img"></a>
             &nbsp;
             <!--
             <a href="../playNow" class="play"> <img src="../images/play.png" title="Play this playlist!" width="50" height="50" class="img"></a>
@@ -55,6 +55,8 @@
     <script>
       //helloWorld();
       var tag = document.createElement('script');
+      
+      
 
       tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -87,7 +89,9 @@
       function onPlayerStateChange(event) {
         if (event.data == 0) {
           //event.target.loadVideoById('IbyFn4Ak_wE');
-          window.location = "/updateJSON";
+          var eventName = encodeURI(document.getElementById("name").innerHTML);
+          var url = "/updateJSON/" + eventName;
+          window.location = url;
 
           //helloWorld();
           //stopVideo();

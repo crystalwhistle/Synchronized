@@ -54,12 +54,13 @@ app.get('/index', index.view);
 app.get('/project/:name', project.viewProject);
 app.get('/editEvents', editEvents.view);
 app.get('/help', help.view);
-app.get('/updateJSON', updateJSON.view);
+app.get('/updateJSON/:name', updateJSON.view);
 app.get('/search', search.view);
 app.get('/settings/:name', settings.view);
 app.get('/share', share.view);
 app.get('/playNow', playNow.view);
-app.get('/addSong', addSong.view);
+app.get('/addSong/:name', addSong.view);
+//app.get('/addSong', addSong.view);
 // Example route
 // app.get('/users', user.list);
 app.get('/createNewEvent', createNewEvent.addEvent);
