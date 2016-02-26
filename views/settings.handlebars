@@ -33,11 +33,10 @@
 
   <!-- Dropdown menu-->
   <div class="dropdown">
-    <img src="../images/settings.png" width="43" height="43" class="img">
-      <div class="dropdown-content">
-        <a href="/index">Home</a>
-        <a href="javascript:history.back()">Back</a>
-      </div>
+    <a href="/index"><img src="../images/home.png" width="43" height="43" class="img"></a>
+  </div>
+    <div class="backbtn">
+    <a href="javascript:history.back()"><img src="../images/back.png" width="43" height="43" class="img"></a>
   </div>
   <br><br>
 
@@ -73,8 +72,7 @@
 
       <input type="submit" id="updateBtn" class="btn btn-default" value="Update"></input><br><br>
     </form>
-
-    <a href="../project/{{name}}"><button id="cancelBtn" class="btn btn-default">Cancel/Done</button></a><br><br>
+    
     <a href="/deleteEvent/{{name}}"><button id="deleteEvent" class="btn btn-default">Delete Event</button></a>
     
     </div>
