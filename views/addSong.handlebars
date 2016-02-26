@@ -51,8 +51,9 @@
     </div>
     <h3>{{notification}}</h3>
     <h2>Add A Song</h2><br>
+    <h2>{{name}}<h2>
 
-    <form id="addSongForm" role="form" method="get" action="/addSong">
+    <form id="addSongForm" role="form" method="get" action="/addSong/{{name}}">
           <div class="form-group">
             <label for="songTitle"><h3>Song Title:</h3></label>
             <input type="text" class="form-control" id="songTitle" placeholder="Title" name="songTitle" required>
@@ -68,9 +69,13 @@
           </div>
           <br><br>
           <input type="submit" id="submitBtn" class="btn btn-default" value="Add Song"></input><br><br></a>
+
           <a href="project/Crystal's%2021st%20Birthday"><input type="button"id="cancelBtn" class="btn btn-default" value="Done"></input></a><br><br>
+
+          <a href="/project/{{name}}"><input type="button"id="cancelBtn" class="btn btn-default" value="Cancel/Done"></input></a><br><br>
+
       </form>
-    
+
 
     
     </center>

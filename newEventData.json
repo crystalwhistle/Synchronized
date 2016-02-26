@@ -4,19 +4,57 @@
         "date": "March 24 2016",
         "image": "images/21party.jpeg",
         "id": "project1",
-        "setIMG": "settings.png"
+        "setIMG": "settings.png",
+        "empty": "",
+        "currentlyPlaying": "428owtKUJYk",
+        "playlist1": [
+        {
+          "songName": "Hotline Bling",
+          "artist": "Drake",
+          "videoID": "uxpDa-c-4Mc"
+        },
+
+        {
+        "songName": "On My Mind",
+        "artist": "Ellie Goulding",
+        "videoID": "H202k7KfZL0"
+
+        }
+        ]
       },
+
       { "name": "Launch Party",
         "date": "May 15 2016",
         "image": "images/launchparty.jpg",
         "id": "project2",
-        "setIMG": "settings.png"
+        "setIMG": "settings.png",
+        "empty": "",
+        "currentlyPlaying": "",
+        "playlist1": [
+        {
+          "songName": "Bad Blood",
+          "artist": "Taylor Swift",
+          "videoID": "QcIy9NiNbmo"
+        },
+
+        {
+        "songName": "Shake it Off",
+        "artist": "Taylor Swift",
+        "videoID": "nfWlot6h_JM"
+
+        }
+        ]
       },
       { "name": "EDC Pregame",
         "date": "June 21 2016",
         "image": "images/edc.jpg",
         "id": "project3",
-        "setIMG": "settings.png"
+        "setIMG": "settings.png",
+        "empty": "",
+        "currentlyPlaying": "",
+        "playlist1": [
+        
+        ]
       }
   ]
 }
