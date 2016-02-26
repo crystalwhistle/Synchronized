@@ -21,11 +21,42 @@
 
 <body>
 
+	{{#if showAlternate}}
+
+	<div class="container">
+		<center>
+
+		<div>
+			<img src="images/logo.png" alt="logo" class="img"><br>
+			<img src="images/divider.png" alt="logo" class="img"><br>
+			<img src="images/events.png" alt="logo" class="img"><br>
+			<img src="images/divider.png" alt="logo" class="img"><br><br>
+		</div>
+
+		<a href="/createNewEvent"><button id="newEvent" class="btn btn-default">Create New Event</button></a> <br><br><br>
+	
+
+		{{#each projects}}
+			<a href="project/{{name}}" class="thumbnail">
+				<div class="project" id="{{id}}">
+					<a href="project/{{name}}" class="thumbnail">
+						<img src="{{image}}" class="img">
+						<p>{{name}}</p>
+						<p>{{date}}</p>
+					</a>
+				</div>
+			</a>
+			<br><br><br>
+		{{/each}}
+		</center>
+	</div>
+
+	{{else}}
+
 	<div class="dropdown">
 		<a href="/createNewEvent"><img src="images/add.png" width="85" height="85" class="img"></a>
 	</div>
 	<br><br>
-
 
 	<div class="container">
 		<center>
@@ -51,6 +82,8 @@
 		{{/each}}
 		</center>
 	</div>
+
+	{{/if}}
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

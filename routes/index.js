@@ -1,8 +1,11 @@
 var newEventData = require("../newEventData.json");
-/*
- * GET home page.
- */
 
 exports.view = function(req, res){
+	newEventData["showAlternate"] = false;
     res.render('index', newEventData);
 };
+
+exports.viewB = function(req, res){
+	newEventData["showAlternate"] = true;
+	res.render('index', newEventData);
+}
