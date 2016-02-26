@@ -35,9 +35,6 @@ exports.viewProject = function(req,res){
       entry["empty"] = "";
   }
 
- 
-
-
   /*var songName = req.query.songTitle;
   var artist = req.query.artist;
   var newSong = {
