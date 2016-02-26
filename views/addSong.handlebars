@@ -50,8 +50,8 @@
       <img src="../images/divider.png" alt="logo" class="img"><br>
     </div>
     <h3>{{notification}}</h3>
-    <h2>Add A Song</h2><br>
-    <h2>{{name}}<h2>
+    <h2>{{name}}<h2>  
+    <h2>Add A Song</h2>
 
     <form id="addSongForm" role="form" method="get" action="/addSong/{{name}}">
           <div class="form-group">
@@ -64,7 +64,8 @@
             <input type="text" class="form-control" id="artist" placeholder="Artist" name="artist" required>
           </div>
           <div class="form-group">
-            <label for="videoURL"><h3>URL:</h3></label>
+            <label for="videoURL"><h3>YOUTUBE VIDEO URL:</h3></label>
+            <h4>(Go onto a youtube video and copy that link to here)</h4>
             <input type="text" class="form-control" id="videoURL" placeholder="videoURL" name="videoURL" required>
           </div>
           <br><br>
