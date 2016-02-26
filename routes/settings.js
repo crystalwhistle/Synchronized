@@ -10,14 +10,8 @@ exports.view = function(req, res){
 		console.log(data.projects[i].name);
     if (data.projects[i].name == name) {
       var entry = data.projects[i];
-
       console.log(entry);
-
-      // Modifiy the entry as you wish here.
-      // The question only mentioned setting "finished" to true, so that's
-      // what I'm doing, but you can change it in any way you want to.
       entry.finished = true;
-
       break;
     }
   }

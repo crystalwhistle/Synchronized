@@ -13,12 +13,10 @@
           "artist": "Drake",
           "videoID": "uxpDa-c-4Mc"
         },
-
         {
         "songName": "On My Mind",
         "artist": "Ellie Goulding",
         "videoID": "H202k7KfZL0"
-
         }
         ]
       },
@@ -36,12 +34,10 @@
           "artist": "Taylor Swift",
           "videoID": "QcIy9NiNbmo"
         },
-
         {
         "songName": "Shake it Off",
         "artist": "Taylor Swift",
         "videoID": "nfWlot6h_JM"
-
         }
         ]
       },
@@ -53,7 +49,11 @@
         "empty": "",
         "currentlyPlaying": "",
         "playlist1": [
-        
+        {
+        "songName": "Roses",
+        "artist": "The Chainsmokers",
+        "videoID": "y3bp0d67srs"
+        }
         ]
       }
   ]
