@@ -10,9 +10,15 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// add any functionality and listeners you want here
+	$('#newEvent').click(newEventButtonClicked);
 }'use strict';
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
 })
+
+function newEventButtonClicked(e){
+	console.log("Create new event button clicked")
+	ga("send", "event", "newEvent", "click");
+}

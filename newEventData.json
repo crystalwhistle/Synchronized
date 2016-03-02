@@ -1,7 +1,7 @@
 {
   "projects": [
       { "name": "Crystal's 21st Birthday",
-        "date": "March 24 2016",
+        "date": "2016-03-24",
         "image": "images/21party.jpeg",
         "id": "project1",
         "setIMG": "settings.png",
@@ -22,7 +22,7 @@
       },
 
       { "name": "Launch Party",
-        "date": "May 15 2016",
+        "date": "2016-05-15",
         "image": "images/launchparty.jpg",
         "id": "project2",
         "setIMG": "settings.png",
@@ -42,7 +42,7 @@
         ]
       },
       { "name": "EDC Pregame",
-        "date": "June 21 2016",
+        "date": "2016-06-21",
         "image": "images/edc.jpg",
         "id": "project3",
         "setIMG": "settings.png",
