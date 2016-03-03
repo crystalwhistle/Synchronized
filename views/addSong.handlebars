@@ -46,25 +46,25 @@
     <center>
 
     <div>
-      <a href="/"><img src="../images/logo.png" alt="logo" class="img"></a><br>
+          <h2>{{name}}<h2>  
+
       <img src="../images/divider.png" alt="logo" class="img"><br>
     </div>
-    <h3>{{notification}}</h3>
-    <h2>{{name}}<h2>  
     <h2>Add A Song</h2>
+    <h4>({{notification}})</h4>
 
     <form id="addSongForm" role="form" method="get" action="/addSong/{{name}}">
           <div class="form-group">
             <label for="songTitle"><h3>Song Title:</h3></label>
-            <input type="text" class="form-control" id="songTitle" placeholder="Title" name="songTitle" required>
+            <input type="text" class="form-control" id="songTitle" placeholder="Title" name="songTitle" required >
           </div>
           <div class="form-group">
             <label for="artist"><h3>Artist:</h3></label>
-            <input type="text" class="form-control" id="artist" placeholder="Artist" name="artist" required>
+            <input type="text" class="form-control" id="artist" placeholder="Artist" name="artist" required >
           </div>
           <div class="form-group">
             <label for="videoURL"><h3>YOUTUBE VIDEO URL:</h3></label>
-            <input type="text" class="form-control" id="videoURL" placeholder="videoURL" name="videoURL" required>
+            <input type="text" class="form-control" id="videoURL" placeholder="videoURL" name="videoURL" required >
             <h4>(Go onto a youtube video and copy that link to here)</h4>
           </div>
           <br><br>
@@ -73,6 +73,8 @@
     
     </center>
   </div>
+
+
 
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
