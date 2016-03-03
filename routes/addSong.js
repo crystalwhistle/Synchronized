@@ -7,6 +7,7 @@ exports.view = function(req, res){
   var songName = req.query.songTitle;
   var artist = req.query.artist;
   var videoURL = req.query.videoURL;
+  
 
   if(songName && artist && videoURL && name){
     var n = videoURL.indexOf("\?v\=");
@@ -33,7 +34,7 @@ exports.view = function(req, res){
   }
   else {
     res.render('addSong', {
-      'notification': addedNotification,
+      'notification': "All fields are required",
       'name' : name
     });
   }
