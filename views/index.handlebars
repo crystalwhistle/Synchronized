@@ -50,7 +50,14 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			<img src="images/divider.png" alt="logo" class="img"><br><br>
 		</div>
 
-		<a href="/createNewEvent"><button id="newEventVB" class="btn btn-default">Create New Event</button></a> <br><br><br>
+		<div class="dropdown">
+		  <img src="images/settings.png" width="43" height="43" class="img">
+		    <div class="dropdown-content">
+		      <a href="/createNewEvent" id="newEventVB">Create New Event</a>
+		    </div>
+		</div>
+
+		<!--<a href="/createNewEvent"><button id="newEventVB" class="btn btn-default">Create New Event</button></a> <br><br><br>-->
 	
 
 		{{#each projects}}
